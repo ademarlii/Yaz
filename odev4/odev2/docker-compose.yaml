@@ -1,0 +1,11 @@
+
+
+services:
+  odev2-service:
+    image: odev2:v1
+    build:
+      context: .
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./target:/app/target
